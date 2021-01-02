@@ -32,11 +32,23 @@ The Service Principal was then granted "owner" access to my ML workspace.
 
 ### Step 2 - Automated ML Experiment
 
+In this step I create an experiment using AutoML, configure a compute cluster and then use that cluster to run the experiment.
+
+The Bank Marketing dataset was registered in the workspace.
+
 ![title](images/2.1_create_dataset.png)
+
+The AutoML experiment was set up to classify if a banking client will subscribe to a term deposit. The experiment completed and the best model was a VotingEnsemble with 91.866% accuracy.
 
 ![title](images/2.2_completed_experiment.png)
 
+The best model can be seen here at the top of the list of models.
+
 ![title](images/2.3_best_model.png)
+
+The top 4 features that influence the model can be seen below as per the model explanation feature.
+
+![title](images/2.4_best_model_explained.png)
 
 ### Step 3 - Deploy the Best Model
 
