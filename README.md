@@ -52,11 +52,25 @@ The top 4 features that influence the model can be seen below as per the model e
 
 ### Step 3 - Deploy the Best Model
 
+The model was then deployed from the Azure Portal using the Azure Container Instance.
+
 ![title](images/3.1_best_model_deployed.png)
 
 ### Step 4 - Enable Logging
 
+In this step I enable Application Insights and then retrieve the logs. Firstly, I created a Python virtual environment, activated it and then installed the Azure Python SDK.
+
+$ pip install azureml-sdk
+
+Within the virtual environment I then execute the logs.py file to enable Application Insights and retrieve the logs. I add the following line of code to the logs.py file.
+
+$ service.update(enable_app_insights=True)
+
+Below you can see Application Insight is enabled in the Azure Portal.
+
 ![title](images/4.1_application_insights_enabled.png)
+
+The resulting log output can bee seen below.
 
 ![title](images/4.2_logs.png)
 
