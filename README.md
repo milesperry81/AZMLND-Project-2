@@ -153,7 +153,7 @@ The pipeline overview for the triggered pipeline is below.
 
 ### Step 8 - Documentation
 
-For this porject the key documentation was a READ.md file and a screen recording (detailed below).
+For this project the key documentation was this README.md file and a screen recording (detailed below).
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
