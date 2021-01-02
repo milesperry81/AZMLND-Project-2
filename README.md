@@ -12,7 +12,6 @@ An architectural overview of the key steps in the project can be seen below.
 ![title](images/project_architecture.png)
 
 ## Key Steps
-*TODO*: Write a short discription of the key steps. Remeber to include all the screenshots required to demonstrate key steps. 
 
 ### Step 1 - Authentication
 
@@ -78,9 +77,9 @@ The resulting log output can be seen below.
 
 ### Step 5 - Swagger Documentation
 
-In this step an instance of Swagger was ran to display the API documentation for the best model.
+In this step an instance of Swagger was deployed to display the API documentation for the best model.
 
-The swagger.json file was downloaded from the Azure Portal for the best model endpoint. The script "swagger.sh" was ran and downloaded the latest swagger container to be run on port 9000. "Serve.py" was ran to enable a Python webserv on port 8000.
+The swagger.json file was downloaded from the Azure Portal for the best model endpoint. The script "swagger.sh" was ran and downloaded the latest swagger container to be run on port 9000. "Serve.py" was ran to enable a Python webserver on port 8000.
 
 The Swagger service was accessed via a browser on port 9000. The API documentation was examined by copying http://localhost:8000/swagger.json into the Explorer field towards the top of the browser screen. The API details from Swagger can be seen below.
 
@@ -96,7 +95,7 @@ The Swagger service was accessed via a browser on port 9000. The API documentati
 
 ### Step 6 - Consume Model Endpoint
 
-In this step the "endpoint.py" script was executed so as to interact with the best model endpoint. The scoreing_uri and key parameters were updated using the endpoint information found in the Azure Portal. Two sets of features were passed to the best model endpoint using the script. The resulting output can be seen below.
+In this step the "endpoint.py" script was executed so as to interact with the best model endpoint. The "scoring_uri" and "key" parameters were updated using the endpoint information found in the Azure Portal. Two sets of features were passed to the best model endpoint using the script. The resulting output can be seen below.
 
 ![title](images/6.1_consume_api.png)
 
@@ -140,7 +139,7 @@ The published pipeline overview is as follows.
 
 ![title](images/7.4_pipeline_overview.png)
 
-The RunDetails wdiget from the notebook can bee seen below.
+The RunDetails widget from the notebook can bee seen below.
 
 ![title](images/7.5_run_details.png)
 
@@ -154,6 +153,7 @@ The pipeline overview for the triggered pipeline is below.
 
 ### Step 8 - Documentation
 
+For this porject the key documentation was a READ.md file and a screen recording (detailed below).
 
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
