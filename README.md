@@ -102,7 +102,7 @@ In this step the "endpoint.py" script was executed so as to interact with the be
 
 ### Step 7 - Create, Publish and Consume Pipeline
 
-In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were run. The notebook can be broadly split into 3 sections:
+In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were ran. The notebook can be broadly split into 3 sections:
 
 #### 1 Create and Submit a Pipeline
 
@@ -122,19 +122,33 @@ In this step the provided Jupyter Notebook was uploaded to the workspace. The no
 
 1. Publish pipeline.
 2. Retrieve authentication header.
-3. Trigger piple to run using the REST endpoint.
+3. Trigger pipeline to run using the REST endpoint.
+
+The pipeline created using the Azure Python SDK can be seen below.
 
 ![title](images/7.1_pipeline_created.png)
 
+The pipeline was then published as an endpoint.
+
 ![title](images/7.2_pipline_endpoint.png)
+
+The dataset and AutoML module can been seen within the pipeline overview.
 
 ![title](images/7.3_dataset_and_automl.png)
 
+The published pipeline overview is as follows.
+
 ![title](images/7.4_pipeline_overview.png)
+
+The RunDetails wdiget from the notebook can bee seen below.
 
 ![title](images/7.5_run_details.png)
 
+The pipeline triggered by the REST endpoint can be seen in the below list.
+
 ![title](images/7.6_scheduled_pipeline.png)
+
+The pipeline overview for the triggered pipeline is below.
 
 ![title](images/7.7_scheduled_pipeline.png)
 
