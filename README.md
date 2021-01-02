@@ -80,11 +80,9 @@ The resulting log output can be seen below.
 
 In this step an instance of Swagger was ran to display the API documentation for the best model.
 
-The swagger.json file was downloaded from the Azure Portal for the best model endpoint. The script swagger.sh was ran and downloaded the latest swagger container to be run on port 9000. Serve.py was ran to enable a Python webserv on port 8000.
+The swagger.json file was downloaded from the Azure Portal for the best model endpoint. The script "swagger.sh" was ran and downloaded the latest swagger container to be run on port 9000. "Serve.py" was ran to enable a Python webserv on port 8000.
 
-the Swagger service was access via a browser on port 9000. The PAI documentation was examined by copying http://localhost:8000/swagger.json into the Explorer field towards the top of the browser screen.
-
-The API details from Swagger can be seen below.
+The Swagger service was accessed via a browser on port 9000. The API documentation was examined by copying http://localhost:8000/swagger.json into the Explorer field towards the top of the browser screen. The API details from Swagger can be seen below.
 
 ![title](images/5.1_swagger.png)
 
@@ -98,9 +96,33 @@ The API details from Swagger can be seen below.
 
 ### Step 6 - Consume Model Endpoint
 
+In this step the "endpoint.py" script was executed so as to interact with the best model endpoint. The scoreing_uri and key parameters were updated using the endpoint information found in the Azure Portal. Two sets of features were passed to the best model endpoint using the script. The resulting output can be seen below.
+
 ![title](images/6.1_consume_api.png)
 
 ### Step 7 - Create, Publish and Consume Pipeline
+
+In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were run. The notebook can be broadly split into 3 sections:
+
+#### 1 Create and Submit a Pipeline
+
+1. Identify the existing experiment from step 2.
+2. Identify a compute instance.
+3. Load the registered dataset.
+4. Create a pipleline and an AutoML step.
+5. Run the pipeline.
+
+#### 2 Examine Model Results
+
+1. Retrieve metrics from child runs.
+2. Retrieve best model.
+3. Test model.
+
+#### 3 Publish Pipeline and run REST endpoint 
+
+1. Publish pipeline.
+2. Retrieve authentication header.
+3. Trigger piple to run using the REST endpoint.
 
 ![title](images/7.1_pipeline_created.png)
 
