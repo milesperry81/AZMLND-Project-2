@@ -158,7 +158,7 @@ For this project the key documentation was this README.md file and a screen reco
 ## Screen Recording
 *TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
-The project screencast can be found [here] (https://youtu.be/zW52CsUDfhk)
+The project screencast can be found here: https://youtu.be/zW52CsUDfhk
 
 ## Improvements
 
