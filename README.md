@@ -129,7 +129,7 @@ The result returned was ["yes","no"]. Based on the JSON data uploaded in the "en
 
 ### Step 7 - Create, Publish and Consume Pipeline
 
-In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were ran. The notebook is [here]: https://github.com/milesperry81/AZMLND-Project-2/aml-pipelines-with-automated-machine-learning-step.ipynb. The notebook can be broadly split into 3 sections:
+In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were ran. The notebook is [here] (https://github.com/milesperry81/AZMLND-Project-2/aml-pipelines-with-automated-machine-learning-step.ipynb). The notebook can be broadly split into 3 sections:
 
 #### 1 Create and Submit a Pipeline
 
