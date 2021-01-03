@@ -49,7 +49,7 @@ The Bank Marketing dataset was registered in the workspace by registering a data
 
 ![title](images/2.1_create_dataset.png)
 
-I then went to the Automated ML section and created a new AutoML experiment using the regsitered Bank Marketing dataset. A compute clsutered was configured with Standard_DS12_v2 virtual machine and 1 as the minimum number of nodes. The experiment was of a Classification type, with Explain Best Model enabled. Exit crtieria was set to 1 hour and Concurrency set to 5. The AutoML expeirment was then ran.
+I then went to the Automated ML section and created a new AutoML experiment using the regsitered Bank Marketing dataset. A compute clustered was configured with Standard_DS12_v2 virtual machine and 1 as the minimum number of nodes. The experiment was of a Classification type, with Explain Best Model enabled. Exit criteria was set to 1 hour and Concurrency set to 5. The AutoML experiment was then ran.
 
 The AutoML experiment was set up to classify if a banking client will subscribe to a term deposit. The experiment completed and the best model was a Voting Ensemble with 91.866% accuracy. Below you can see the details of the completed experiment.
 
@@ -93,7 +93,7 @@ Below you can see Application Insight is enabled in the Azure Portal as a result
 
 ![title](images/4.1_application_insights_enabled.png)
 
-The resulting log output returned to the command line interface after running logs.py can be seen below.
+The resulting log output returned to the command line interface after running logs.py can be seen below. This demostartes teh ability to access logs from a remote machine using the Azure CLI.
 
 ![title](images/4.2_logs.png)
 
@@ -105,7 +105,9 @@ In this step an instance of Swagger was deployed to display the API documentatio
 
 The swagger.json file was downloaded from the Azure Portal for the best model endpoint. The script "swagger.sh" was ran and downloaded the latest swagger container to be run on port 9000. "Serve.py" was ran to enable a Python webserver on port 8000.
 
-The Swagger service was accessed via a browser on port 9000. The API documentation was examined by copying http://localhost:8000/swagger.json into the Explorer field towards the top of the browser screen. The API details from Swagger can be seen below. It outlines the GET and POST methods for the API, any parameters and expected responses types.
+The Swagger service was accessed via a browser on port 9000. The API documentation was examined by copying http://localhost:8000/swagger.json into the Explorer field towards the top of the browser screen. 
+
+The API details from Swagger can be seen below. It outlines the GET and POST methods for the API, any parameters and expected responses types. It is used by developers when developing a program to make a call to an endpoint.
 
 ![title](images/5.1_swagger.png)
 
@@ -127,7 +129,7 @@ The result returned was ["yes","no"]. Based on the JSON data uploaded in the "en
 
 ### Step 7 - Create, Publish and Consume Pipeline
 
-In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were ran. The notebook is [here]: aml-pipelines-with-automated-machine-learning-step.ipynb. The notebook can be broadly split into 3 sections:
+In this step the provided Jupyter Notebook was uploaded to the workspace. The notebook uses the Azure Python SDK to interact with the workspace. Relevant parameters in the notebook were updated. The cells in the notebook were ran. The notebook is [here]: https://github.com/milesperry81/AZMLND-Project-2/aml-pipelines-with-automated-machine-learning-step.ipynb. The notebook can be broadly split into 3 sections:
 
 #### 1 Create and Submit a Pipeline
 
