@@ -156,7 +156,6 @@ The pipeline overview for the triggered pipeline is below.
 For this project the key documentation was this README.md file and a screen recording (detailed below).
 
 ## Screen Recording
-*TODO* Provide a link to a screen recording of the project in action. Remember that the screencast should demonstrate:
 
 The project screencast can be found here: https://youtu.be/zW52CsUDfhk
 
@@ -164,7 +163,7 @@ The project screencast can be found here: https://youtu.be/zW52CsUDfhk
 
 * Automate the testing and deployment of the best model found by the AutoML pipeline.
 
-* Notebook seesm to be using the training data to test the model. This is not a fair test as the model has already seen the training data. It should use an unseen set of test data.
+* Notebook seems to be using the training data to test the model. This is not a fair test as the model has already seen the training data. It should use an unseen set of test data.
 
 
 
